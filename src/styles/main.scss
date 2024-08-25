@@ -1,0 +1,21 @@
+// Entry point for your Sass build
+@import "mixins/media";
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+// Configuration
+@import "config/variables";
+@import "config/reset";
+
+// Layout
+@import "layouts/container";
+@import "layouts/sidebar";
+@import "layouts/sidebar-extended";
+@import "layouts/preview";
+// @import "layouts/footer";
+
+// Components
+@import "components/input";
+@import "components/button";
+@import "components/form";

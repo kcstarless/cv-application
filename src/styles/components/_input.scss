@@ -1,0 +1,30 @@
+input, textarea {
+    border: var(--border-light);
+    border-radius: var(--border-radius);
+    background-color: var(--color-light);
+    padding: var(--space-xxs);
+    // color: var(--color-light);
+    margin-bottom: var(--space-s);
+    // width: 100%;
+}
+
+input:focus {
+    background-color: rgba(255, 115, 0, 0.267);
+    outline: none; 
+
+}
+
+textarea {
+    // min-width: 200px; // Minimum width of 200px
+    // max-width: 250px; // Maximum width of 250px
+    height: 300px;
+    width: 100%;
+}
+
+
+label {
+    font-size: var(--font-size-s);
+    font-weight: bold;
+    color: var(--color-text-muted)
+    // padding-bottom: var(--space-s);
+}

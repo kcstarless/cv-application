@@ -1,0 +1,142 @@
+.preview {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary-bg);
+    padding: var(--space-l);
+    gap: var(--space-xl);
+
+   
+    .header {
+        // display: flex;
+        // justify-content: space-between;
+        
+
+        h2 {
+            display: flex;
+            justify-content: end;
+            color: var(--color-tertiary-bg);
+            padding-left: var(--space-xxxs);
+        }
+        h1 {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            // color: var(--color-text-muted);
+            padding-left: var(--space-xxxs);
+        }
+    }
+}
+
+.resume {
+    // width: 300px;
+    grid-area: preview;
+    // border: var(--border-dark);
+    // margin: var(--space-s);
+    // border: var(--border-dark);
+    border-radius: var(--border-radius);
+    background-color: var(--color-tertiary-bg);
+    box-shadow: var(--shadow-large);
+    padding: var(--space-l);
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 0.2fr auto auto;
+    grid-template-areas:
+        "general  general"
+        "skill education"
+        "skill experience";
+    gap: var(--space-l);
+    // color: var(--color-primary-rotate);
+    h4 {
+        color: var(--color-light);
+    }
+}
+
+.general {
+    grid-area: general;
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    // border: var(--border-dark);
+    // justify-content: space-evenly;
+    // gap: 20px;
+
+    .profile {
+
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        align-self: top;
+        // color: var(--color-text-muted);
+
+        p {
+            font-size: var(--font-size-xs);
+            display: inline-flex;
+            align-items: center;
+            // color: var(--color-light);
+        }
+    }
+}
+
+.skills {
+    grid-area: skill;
+    color: var(--color-text-header);
+    font-size: var(--font-size-s);
+    // border: var(--border-dark);
+}
+
+.education {
+    grid-area: education;
+    // border: var(--border-dark);
+    .institute {
+        
+    }
+    .studied {
+        font-size: larger;
+        color: var(--color-text-header);
+    }
+}
+
+.experience {
+    grid-area: experience;
+    // border: var(--border-dark);
+    .organization {
+        font-size: larger;
+        color: var(--color-text-header);
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--space-s);
+}
+
+.highlight {
+    background-color: var(--color-secondary-bg);
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border-radius: var(--border-radius);
+    padding: var(--space-xxxs);
+}
+p {
+    font-weight: bold;
+    // color: var(--color-muted);
+    // padding-bottom: var(--space-xxxs);
+}
+svg {
+    padding-left: var(--space-xxxs);
+}
+
+.title {
+    color: var(--color-light);
+}
+.about {
+    font-size: var(--font-size-s);
+}
+
+.date-range {
+    font-size: var(--font-size-xs);
+    // color: var(--color-text-body);
+}
